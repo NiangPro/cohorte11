@@ -38,15 +38,48 @@
 		input[type="submit"]{
 			background: green;
 			color: white;
+			border: none;
+			border-radius: 10px;
+			cursor: pointer;
+		}
+
+		input[type="submit"]:hover{
+			transition: 3s;
+			background: lightgreen;
 		}
 
 		input[type="reset"]{
 			background: red;
 			color: white;
 		}
+
+		#cadre{
+			width: 200px;
+			height: 100px;
+/*			border: 10px solid #000;*/
+/*			border: 10px dotted #000;*/
+/*			border: 10px dashed #000;*/
+/*			border: 10px double #000;*/
+/*			border: 10px groove #000;*/
+/*			border: 10px inset #000;*/
+/*			border: 10px outset #000;*/
+			border-left: 10px solid green;
+
+/*			border-radius: 30px;*/
+/*			border-radius: 0px 30px;*/
+			border-radius: 10px 20px 30px 40px;
+			box-shadow:  5px 5px 5px red;
+			transition: 3s;
+
+		}
+
+		#cadre:hover{
+			box-shadow: -5px -5px 5px orange;
+		}
 	</style>
 </head>
 <body>
+	<div id="cadre"></div>
 	
 	<div>
 		<h1 style="color: red;" id="titre" class="titre">Lorem ipsum dolor sit.</h1>
