@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Document</title>
+	<style>
+		h1{
+			color: orange;
+		}
+
+		.titre{
+			color: yellow;
+		}
+
+		#titre{
+			color: green;
+		}
+
+		p, #titre2{
+			text-shadow: 2px 2px 2px purple;
+			font-family: algerian;
+		}
+
+		div  h1{
+			background: black;
+		}
+
+		div + h1{
+			background: purple;
+		}
+
+		input[type="text"]{
+			width: 400px;
+			outline: none;
+		}
+
+		input[type="submit"]{
+			background: green;
+			color: white;
+		}
+
+		input[type="reset"]{
+			background: red;
+			color: white;
+		}
+	</style>
+</head>
+<body>
+	
+	<div>
+		<h1 style="color: red;" id="titre" class="titre">Lorem ipsum dolor sit.</h1>
+		<p>
+			Lorem ipsum dolor sit amet consectetur, adipisicing elit. Maiores in animi impedit eos necessitatibus ipsam veniam tempore pariatur odit assumenda ullam, ratione obcaecati quas cumque, iusto, esse recusandae exercitationem quisquam.
+		</p>
+	</div>
+	<h1 id="titre2">Lorem ipsum dolor sit amet consectetur.</h1>
+	<a href="">Juste un lien</a>
+	<h1>Lorem ipsum dolor sit amet consectetur adipisicing elit.</h1>
+	<form action="">
+		<label for="">Prenom</label>
+		<input type="text" placeholder="Veuillez saisir votre prenom"><br><br>
+		<label for="">Nom</label>
+		<input type="text" placeholder="Veuillez saisir votre prenom"><br><br>
+		<input type="submit" value="S'inscrire">
+		<input type="reset" value="Annuler">
+	</form>
+</body>
+</html>
