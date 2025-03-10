@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Document</title>
+	<style>
+		.card{
+			width: 500px;
+			height: 400px;
+			margin: auto;
+		}
+
+		.card h1{
+			text-align: center;
+		}
+
+		.form-group{
+			display: grid;
+			grid-template-columns: 1fr 1fr;
+			column-gap: 40px;
+			row-gap: 20px;
+		}
+
+		form input{
+			display: block;
+			width: 97%;
+			height: 30px;
+			padding-left: 15px;
+			box-sizing: border-box;
+			outline: none;
+		}
+
+		form label{
+			display: block;
+			text-transform: capitalize;
+			font-weight: bold;
+		}
+		#message{
+			margin-top: 20px;
+		}
+
+		textarea{
+			display: block;
+			width: 97%;
+			height: 70px;
+			margin-top: 10px;
+			outline: none;
+			resize: none;
+		}
+
+		button{
+			background: blue;
+			display: block;
+			margin-top: 30px;
+			color: white;
+			height: 40px;
+			width: 120px;
+			border: none;
+			border-radius: 5px;
+		}
+	</style>
+</head>
+<body>
+	
+	<div class="card">
+		<h1>Contact Us</h1>
+		<form action="">
+			<div class="form-group">
+				<div class="col">
+					<label for="">your name</label>
+					<input type="text" placeholder="Name">
+				</div>
+				<div class="col">
+					<label for="">email adress</label>
+					<input type="email" placeholder="Email">
+				</div>
+				<div class="col">
+					<label for="">phone number</label>
+					<input type="tel" placeholder="Phone">
+				</div>
+				<div class="col">
+					<label for="">organization name</label>
+					<input type="text" placeholder="Org">
+				</div>
+			</div>
+			<label for="" id="message">enter your message</label>
+			<textarea name="" id="" placeholder="Type"></textarea>
+
+			<button type="submit">Submit</button>
+		</form>
+	</div>
+</body>
+</html>
