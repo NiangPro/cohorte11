@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Document</title>
+	<style>
+		body{
+			display: flex;
+			justify-content: center;
+			column-gap: 30px;
+			background: linear-gradient(to left bottom, rgb(133, 73, 194), rgb(133, 73, 194), orange) no-repeat;
+			height: 100vh;
+			overflow: hidden;
+			align-items: center;
+		}
+		.card{
+			width: 250px;
+			height: 300px;
+			border-radius: 10px;
+			box-shadow: 1px 1px 3px grey, -1px -1px 3px grey;
+			background: white;
+		}
+
+		.card .card-header{
+			height: 40%;
+			width: 100%;
+			border-radius: 10px 10px 50% 50%;
+			font-size: 45px;
+			font-family: sans-serif;
+			font-weight: bold;
+			text-align: center;
+			line-height: 95px;
+			color: white;
+
+		}
+
+		.card-body{
+			height: 60%;
+			width: 100%;
+			text-align: center;
+			padding: 0px 20px;
+			box-sizing: border-box;
+		}
+
+		.card-body p{
+			margin-bottom: 30px;
+		}
+
+		.card-body a{
+			text-decoration: none;
+			padding: 7px;
+			border-radius: 15px;
+		color: white;
+		}
+
+		.bg-orange{
+			background: orange;
+		}
+
+		.bg-rose{
+			background: rgb(177, 46, 68);
+		}
+
+		.bg-violet{
+			background: rgb(133, 73, 194);
+		}
+	</style>
+</head>
+<body>
+	<div class="card">
+		<div class="card-header bg-orange">
+			1
+		</div>
+		<div class="card-body">
+			<p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Soluta iure explicabo asperiores aperiam distinctio nobis.</p>
+			<a href="" class="bg-orange">Read more</a>
+		</div>
+	</div>
+
+	<div class="card">
+		<div class="card-header bg-rose">
+			2
+		</div>
+		<div class="card-body">
+			<p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Soluta iure explicabo asperiores aperiam distinctio nobis.</p>
+			<a href="" class="bg-rose">Read more</a>
+		</div>
+	</div>
+
+	<div class="card">
+		<div class="card-header bg-violet">
+			3
+		</div>
+		<div class="card-body">
+			<p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Soluta iure explicabo asperiores aperiam distinctio nobis.</p>
+			<a href="" class="bg-violet">Read more</a>
+		</div>
+	</div>
+</body>
+</html>
