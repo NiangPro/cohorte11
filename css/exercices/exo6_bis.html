@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Document</title>
+	<style>
+		body{
+			height: 97vh;
+			display: flex;
+			justify-content: center;
+			column-gap: 30px;
+			align-items: center;
+			background: linear-gradient(to left bottom, rgb(239, 138, 248), rgb(239, 138, 248), rgb(239, 138, 248), orange);
+		}
+		.carte{
+			width: 230px;
+			height: 300px;
+			border-radius: 10px;
+			box-shadow: 1px 1px 10px grey;
+			background: white;
+		}
+
+		.entete{
+			height: 40%;
+			border-radius: 10px 10px 50% 50%;
+			font-size: 45px;
+			font-weight: bold;
+			font-family: sans-serif;
+			text-align: center;
+			line-height: 100px;
+			color: white;
+		}
+
+		.contenu{
+			height: 60%;
+			text-align: center;
+			padding: 0px 20px;
+		}
+
+		.contenu p{
+			margin-bottom: 30px;
+		}
+
+		.contenu a{
+			text-decoration: none;
+			color: white;
+			padding: 10px 20px;
+			border-radius: 25px;
+		}
+
+		.orange{
+			background: orange;
+		}
+
+		.rouge{
+			background: darkred;
+		}
+
+		.violet{
+			background: purple;
+		}
+	</style>
+</head>
+<body>
+	<div class="carte">
+		<div class="entete orange">1</div>
+		<div class="contenu">
+			<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad id consequuntur facere veniam quasi illo possimus quis minus.uuntur.</p>
+			<a href="" class="orange">Read more</a>
+		</div>
+	</div>
+
+	<div class="carte">
+		<div class="entete rouge">2</div>
+		<div class="contenu">
+			<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad id consequuntur facere veniam quasi illo possimus quis minus.uuntur.</p>
+			<a href="" class="rouge">Read more</a>
+		</div>
+	</div>
+
+	<div class="carte">
+		<div class="entete violet">3</div>
+		<div class="contenu">
+			<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad id consequuntur facere veniam quasi illo possimus quis minus.uuntur.</p>
+			<a href="" class="violet">Read more</a>
+		</div>
+	</div>
+</body>
+</html>
