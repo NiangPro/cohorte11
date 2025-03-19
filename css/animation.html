@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="../images/bg.jpg">
+    <title>Document</title>
+    <style>
+        .cards{
+            perspective: 1000px;
+            height: 300px;
+            width: 300px;
+            margin: auto;
+            
+        }
+
+        .cards:hover .card{
+            transform: rotateY(180deg);
+        }
+
+        .card{
+            width: 100%;
+            height: 100%;
+            position: relative;
+            transition: transform 2s;
+            transform-style: preserve-3d;
+        }
+
+        .front, .back{
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: 30px;
+            backface-visibility: hidden;
+        }
+
+        .front{
+            background: red;
+        }
+
+        .back{
+            background: green;
+            transform: rotateY(180deg);
+        }
+
+        .boites{
+            width: 400px;
+            height: 300px;
+            border: 1px solid #000;
+            display: flex;
+            overflow: hidden;
+            margin: auto;
+
+        }
+
+        @keyframes slider{
+            0%{
+                transform: translateX(0);
+            }
+            15%{
+                transform: translateX(-50%);
+            }
+
+            35%{
+                transform: translateX(-100%);
+            }
+
+            55%{
+                transform: translateX(-150%);
+            }
+
+            75%{
+                transform: translateX(-200%);
+            }
+        }
+
+        .boites img{
+            width: 100%;
+            height: 100%;
+            animation: slider 6s infinite ease-in;
+        }
+    </style>
+    
+</head>
+<body>
+    <div class="cards">
+        <div class="card">
+            <div class="front">Avant</div>
+            <div class="back">Arriere</div>
+        </div>
+    </div>
+
+    <div class="boites">
+        <img src="../images/img1.jfif" alt="">
+        <img src="../images/img2.jfif" alt="">
+        <img src="../images/img3.jfif" alt="">
+    </div>
+
+    <marquee behavior="alternate" direction="">
+        <img src="../images/img1.jfif" alt="">
+        <img src="../images/img2.jfif" alt="">
+        <img src="../images/img3.jfif" alt="">
+    </marquee>
+</body>
+</html>
